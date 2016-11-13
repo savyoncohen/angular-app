@@ -71,7 +71,7 @@ export class TodoListStorageService {
    * @returns {any[]}
    */
   destroy(item) {
-    this.todoList.splice(this.findItemIndex(item), 1);
+    this.todoList.splice(this.todoList.indexOf(item), 1);
     return this.update();
   }
 }
